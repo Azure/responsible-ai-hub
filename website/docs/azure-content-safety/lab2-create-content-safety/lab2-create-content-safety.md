@@ -42,6 +42,7 @@ Otherwise, run the following command.
 ```shell
 az deployment group create --name rai-workshop --template-file use-openai/main.bicep 
 ```
+> Note: Currently, Azure OpenAI Service is only available in [certain regions](https://azure.microsoft.com/explore/global-infrastructure/products-by-region/?products=cognitive-services&WT.mc_id=studentamb_118941).
 7. See the environment variables for your resources.
 ```shell
 bash setenv.sh
