@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.0.1">
 <title data-rh="true">Lab# 3: Add flow connections | Responsible AI Developer Hub</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" property="og:image" content="https://azure.github.io/responsible-ai-hub/img/responsible-ai-card.jpg"><meta data-rh="true" name="twitter:image" content="https://azure.github.io/responsible-ai-hub/img/responsible-ai-card.jpg"><meta data-rh="true" property="og:url" content="https://azure.github.io/responsible-ai-hub/docs/add-flow-connections"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Lab# 3: Add flow connections | Responsible AI Developer Hub"><meta data-rh="true" name="description" content="To use Prompt Flow, you need to enable the feature in Azure ML studio.  To enable the feature, complete the following steps:"><meta data-rh="true" property="og:description" content="To use Prompt Flow, you need to enable the feature in Azure ML studio.  To enable the feature, complete the following steps:"><link data-rh="true" rel="icon" href="/responsible-ai-hub/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://azure.github.io/responsible-ai-hub/docs/add-flow-connections"><link data-rh="true" rel="alternate" href="https://azure.github.io/responsible-ai-hub/docs/add-flow-connections" hreflang="en"><link data-rh="true" rel="alternate" href="https://azure.github.io/responsible-ai-hub/docs/add-flow-connections" hreflang="x-default"><script>!function(t,e,n,c,a,s,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(s=e.createElement(c)).async=1,s.src="https://www.clarity.ms/tag/k0s1hzc31a",(r=e.getElementsByTagName(c)[0]).parentNode.insertBefore(s,r)}(window,document,"clarity","script")</script><link rel="stylesheet" href="/responsible-ai-hub/assets/css/styles.b2f9d7f8.css">
-<script src="/responsible-ai-hub/assets/js/runtime~main.0c48dab2.js" defer="defer"></script>
+<script src="/responsible-ai-hub/assets/js/runtime~main.d3584b10.js" defer="defer"></script>
 <script src="/responsible-ai-hub/assets/js/main.a6349a69.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -18,22 +18,13 @@
 <li>Close the features blade.</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="flow-connections">Flow connections<a href="#flow-connections" class="hash-link" aria-label="Direct link to Flow connections" title="Direct link to Flow connections">​</a></h2>
-<p>As you work on creating Flows, it may have dependencies, services or external resources that you would need to connect to; such as OpenAI, Content Safety AI or your custom LLM models.  It enables users to add and manage connection to these resources as well as a their connection secrets.  Once a resource is connected, your Flow nodes have access to the resources metadata (e.g. name, api key, api_endpoint, or type).  In this workshop, we’ll be using the Azure OpenAI API and Azure Content Safety.</p>
-<p>First, we’ll add the connection for Azure OpenAI API.</p>
+<p>As you work on creating Flows, it may have dependencies, services or external resources that you would need to connect to; such as OpenAI, Azure Content Safety or your custom LLM models.  It enables users to add and manage connection to these resources as well as a their connection secrets.  Once a resource is connected, your Flow nodes have access to the resources metadata (e.g. name, api key, api_endpoint, or type).  In this workshop, we’ll be using the Azure OpenAI API.</p>
+<p>First, let&#x27;s confirm the Azure OpenAI API connection your created in the preview lab.</p>
 <ol>
 <li>Select the <strong>Prompt Flow</strong> tab, on the left-hand side of the navigation bar.</li>
 <li>Click on the <strong>Connections</strong> tab on the Prompt Flow page</li>
-<li>Click on the <strong>Create</strong> button, then select <strong>Azure OpenAI</strong> option in the drop-down menu</li>
-<li>Enter a <strong>Name</strong> (e.g. azure-openai-connection)</li>
-<li>The <strong>Azure OpenAI</strong> option should be selected for <strong>Provider</strong>.</li>
-<li>Select your subscription under <strong>Subscription id</strong>.</li>
-<li>Select your OpenAI instance name, you created in the previous lab, under <strong>Azure OpenAI Account Names</strong> drop-down menu.</li>
-<li>Paste the Key 1 value for Azure OpenAI you copied earlier in the <strong>API key</strong> textbox.</li>
-<li>Paste the Language API URL you copied earlier in the <strong>API base</strong> textbox.</li>
-<li>The <strong>API type</strong> should be set to the default value (e.g. azure)</li>
-<li>The <strong>API version</strong> should be set to the default value (e.g. 2023-10-01-preview)</li>
-<li>Click <strong>Save</strong></li>
 </ol>
+<p><img loading="lazy" src="/responsible-ai-hub/assets/images/00-confirm-flow-connection-d315f6045863bb07de2f2b85e5b82fbf.png" width="778" height="395" class="img_ev3q"></p>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="create-a-runtime">Create a Runtime<a href="#create-a-runtime" class="hash-link" aria-label="Direct link to Create a Runtime" title="Direct link to Create a Runtime">​</a></h2>
 <p>To run the Prompt Flow nodes, you need to create a Runtime.  Runtime serve as the compute with a docker environment for executing the flows.  The Compute instance are the VMs and the environment are create from a docker image that contains the Python packages and dependencies need to run the Flow.  When creating a runtime, you have the option of choosing a default curated environment; or you can create your own custom environment.</p>
 <p>To create runtime environment, complete the following steps:</p>
