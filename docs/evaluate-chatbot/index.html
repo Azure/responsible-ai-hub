@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="generator" content="Docusaurus v3.1.1">
 <title data-rh="true">6️⃣ | Evaluate Chat Agent | Responsible AI Developer Hub</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://azure.github.io/responsible-ai-hub/img/rai-hub-banner.jpeg"><meta data-rh="true" property="og:url" content="https://azure.github.io/responsible-ai-hub/docs/evaluate-chatbot"><meta data-rh="true" property="og:locale" content="en"><meta data-rh="true" name="docusaurus_locale" content="en"><meta data-rh="true" name="docsearch:language" content="en"><meta data-rh="true" name="og:title" content="The #ResponsibleAI Developer Hub: Skill Up Today!"><meta data-rh="true" name="og:description" content="The Responsible AI Developer Hub provides free resources for skilling up on Responsible AI Principles and Practices. Start off with our three workshops on Responsible AI Dashboard, Azure Content Safety, and Prompt Flow on Azure ML. Visit https://aka.ms/rai-hub/website"><meta data-rh="true" name="og:url" content="https://aka.ms/rai-hub/website"><meta data-rh="true" name="twitter:url" content="https://aka.ms/rai-hub/website"><meta data-rh="true" name="twitter:title" content="The #ResponsibleAI Developer Hub: Skill Up Today!"><meta data-rh="true" name="twitter:description" content="The Responsible AI Developer Hub provides free resources for skilling up on Responsible AI Principles and Practices. Start off with our three workshops on Responsible AI Dashboard, Azure Content Safety, and Prompt Flow on Azure ML. Visit https://aka.ms/rai-hub/website"><meta data-rh="true" name="twitter:image" content="https://azure.github.io/responsible-ai-hub/img/rai-hub-banner.jpeg"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="twitter:creator" content="@nitya"><meta data-rh="true" name="twitter:site" content="@AzureAdvocates"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="6️⃣ | Evaluate Chat Agent | Responsible AI Developer Hub"><meta data-rh="true" name="description" content="You can unit test your Flow.  However, Prompt flow provides a gallery of sample evaluation flows your can use to test you Flow in bulk.  For example, classification accuracy, QnA Groundedness, QnA Relevant, QnA Similarity, QnA F1 Score etc.  This enables you to test how well your LLM is performing.  In addition, you have the ability to examine which of your variant prompts are performing better.   In this example, we’ll use the QnA RAG Evaluation template to test our flow."><meta data-rh="true" property="og:description" content="You can unit test your Flow.  However, Prompt flow provides a gallery of sample evaluation flows your can use to test you Flow in bulk.  For example, classification accuracy, QnA Groundedness, QnA Relevant, QnA Similarity, QnA F1 Score etc.  This enables you to test how well your LLM is performing.  In addition, you have the ability to examine which of your variant prompts are performing better.   In this example, we’ll use the QnA RAG Evaluation template to test our flow."><link data-rh="true" rel="icon" href="/responsible-ai-hub/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://azure.github.io/responsible-ai-hub/docs/evaluate-chatbot"><link data-rh="true" rel="alternate" href="https://azure.github.io/responsible-ai-hub/docs/evaluate-chatbot" hreflang="en"><link data-rh="true" rel="alternate" href="https://azure.github.io/responsible-ai-hub/docs/evaluate-chatbot" hreflang="x-default"><script>!function(t,e,n,c,a,s,r){t[n]=t[n]||function(){(t[n].q=t[n].q||[]).push(arguments)},(s=e.createElement(c)).async=1,s.src="https://www.clarity.ms/tag/k0s1hzc31a",(r=e.getElementsByTagName(c)[0]).parentNode.insertBefore(s,r)}(window,document,"clarity","script")</script><link rel="stylesheet" href="/responsible-ai-hub/assets/css/styles.2e7c4140.css">
-<script src="/responsible-ai-hub/assets/js/runtime~main.0d7610f7.js" defer="defer"></script>
+<script src="/responsible-ai-hub/assets/js/runtime~main.955900a3.js" defer="defer"></script>
 <script src="/responsible-ai-hub/assets/js/main.aee524f5.js" defer="defer"></script>
 </head>
 <body class="navigation-with-keyboard">
@@ -36,47 +36,48 @@
 <p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluate-input-flow-1308009d35933c4050b93212a44d7446.png" width="975" height="523" class="img_ev3q"></p>
 <ol start="8">
 <li>Click the <strong>Next</strong> button.</li>
-<li>On the <strong>Select evaluation</strong> page, select the checkbox for the <strong>QnA Groundedness Evaluation</strong>.</li>
 </ol>
-<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluation-gallery-0f7ded3f4413d56306bd078147000e21.png" width="1475" height="807" class="img_ev3q"></p>
+<div class="theme-admonition theme-admonition-info admonition_xJq3 alert alert--info"><div class="admonitionHeading_Gvgb"><span class="admonitionIcon_Rf37"><svg viewBox="0 0 14 16"><path fill-rule="evenodd" d="M7 2.3c3.14 0 5.7 2.56 5.7 5.7s-2.56 5.7-5.7 5.7A5.71 5.71 0 0 1 1.3 8c0-3.14 2.56-5.7 5.7-5.7zM7 1C3.14 1 0 4.14 0 8s3.14 7 7 7 7-3.14 7-7-3.14-7-7-7zm1 3H6v5h2V4zm0 6H6v2h2v-2z"></path></svg></span>Multiple EVALUATION</div><div class="admonitionContent_BuS1"><p>You can select one or more evaluation templates to validate your flow.  It depends on your use case and which performance insights you want to get.</p></div></div>
+<ol start="9">
+<li>On the <strong>Select evaluation</strong> page, select the checkbox for the <strong>QnA Groundedness Evaluation</strong> and <strong>QnA Relevance Evaluation</strong>.</li>
+</ol>
+<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluation-gallery-421f02ce26ad3ad17320141db3ad32d2.png" width="2193" height="1335" class="img_ev3q"></p>
 <ol start="10">
 <li>Click the <strong>Next</strong> button.</li>
 <li>Click on the right arrow <strong>“&gt;”</strong> to expand the <strong>QnA Groundedness Evaluation</strong> settings.</li>
 </ol>
-<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluate-qna-fields-cb1170858c26305ea944cc434a6f9625.png" width="975" height="456" class="img_ev3q"></p>
+<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluate-qna-fields-4c48d5e6fc96f9c8ec3c54f34763a403.png" width="2183" height="887" class="img_ev3q"></p>
 <ol start="12">
 <li>Select the <em>test-contoso-dental-dataset</em> dataset your uploaded earlier for the <strong>Choose data asset for evaluation</strong> field.</li>
-<li>For the <strong>metric</strong> field, cope and paste the following text:</li>
-</ol>
-<div class="language-bash codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_biex"><pre tabindex="0" class="prism-code language-bash codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">gpt_groundedness,gpt_retrieval_score,gpt_relevance  </span><br></span></code></pre><div class="buttonGroup__atx"><button type="button" aria-label="Copy code to clipboard" title="Copy" class="clean-btn"><span class="copyButtonIcons_eSgA" aria-hidden="true"><svg viewBox="0 0 24 24" class="copyButtonIcon_y97N"><path fill="currentColor" d="M19,21H8V7H19M19,5H8A2,2 0 0,0 6,7V21A2,2 0 0,0 8,23H19A2,2 0 0,0 21,21V7A2,2 0 0,0 19,5M16,1H4A2,2 0 0,0 2,3V17H4V3H16V1Z"></path></svg><svg viewBox="0 0 24 24" class="copyButtonSuccessIcon_LjdS"><path fill="currentColor" d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z"></path></svg></span></button></div></div></div>
-<ol start="14">
 <li>Enter <code>${run.outputs.answer}</code> for the <strong>answer</strong> field.</li>
 <li>Click on the Data Source textbox and enter <code>${data.question}</code> for the <strong>question</strong> field.</li>
-<li>Enter <code>${run.outputs.context}</code> for the <strong>documents</strong>field.</li>
+<li>Enter <code>${run.outputs.context}</code> for the <strong>context</strong>field.</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/pf-rag-eval-input-efd911a0d3c894ebb742938f31d0e43b.png" width="1383" height="440" class="img_ev3q"></p>
-<ol start="17">
+<ol start="16">
 <li>On the right-hand side of the page, scroll down to the bottom of the page.</li>
 <li>Select your AzureOpenAI connection name (e.g. azure-openai-conn) for the <strong>Connection</strong> fields.</li>
 <li>The <strong>Deployment name / Model</strong> should automatically population the your AzureOpenAI deployment name.</li>
 </ol>
-<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluate-connection-9b5fae9aa674bd383e1a47a47613052a.png" width="973" height="441" class="img_ev3q"></p>
-<ol start="20">
+<p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/ground-eval-conn-d1d812972b3ed42c4c62f7dab4c6d0f6.png" width="2185" height="467" class="img_ev3q"></p>
+<ol start="19">
+<li>Click on the right arrow <strong>“&gt;”</strong> to expand the <strong>QnA Relevance Evaluation</strong> settings.</li>
+<li>Repeat the same selects you chose for the QnA Groundness section.</li>
 <li>Click the <strong>Next</strong> button.</li>
 <li>Finally, click on the <strong>Submit</strong> button.</li>
 <li>To monitor the run progress, click on the <strong>Prompt flow</strong> navigation option.  Then click on the <strong>Runs</strong> tab</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/start-evaluate-61f66a3b2560fe8d78e923720a0dd77b.png" width="1242" height="440" class="img_ev3q"></p>
-<ol start="23">
+<ol start="24">
 <li>Click the Refresh button to update the run status. The run should take ~15 minutes.</li>
 <li>Click on the radio button for the QnA RAG Evaluation, the press the <strong>Visualize outputs</strong> to view the results.</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/pf-visualize-output-717ae69e97e745bca3761eaa741b51b7.png" width="1242" height="423" class="img_ev3q"></p>
-<ol start="25">
+<ol start="26">
 <li>The <strong>Runs &amp; metrics</strong> section shows a summary score for gpt_groundedness, gpt_retrieval_score, and gpt_relevance.  The <strong>Outputs</strong> section shows the detailed results for each of the 3 metrics.</li>
 </ol>
 <p><img decoding="async" loading="lazy" src="/responsible-ai-hub/assets/images/evaluate-results-9ea135abf486f1a6ce3ea3eba2301302.png" width="1815" height="842" class="img_ev3q"></p>
-<ol start="26">
+<ol start="27">
 <li>The score will range from 1 to 5, where 1 is the worst and 5 is the best performance.</li>
 </ol>
 <h2 class="anchor anchorWithStickyNavbar_LWe7" id="summary">Summary<a href="#summary" class="hash-link" aria-label="Direct link to Summary" title="Direct link to Summary">​</a></h2>
