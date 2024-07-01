@@ -1,3 +1,5 @@
+**UPDATE**: *This repository is archived effective July 1, 2024. For Responsible AI resources, visit [aka.ms/rai-collection](https://aka.ms/rai-collection).*
+
 # Responsible AI Hub
 
 Welcome to the Responsible AI Hub for Developers with all levels of expertise in AI and Machine Learning. This is a dedicated space to help the community discover relevant training resources and events to learn about Responsible AI.
