@@ -14,6 +14,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
       <div className="container">
         <h1 className="hero__title">{siteConfig.title}</h1>
+        <p className="hero__subtitle">UPDATE: This repository is archived effective July 1, 2024. For Responsible AI resources, visit aka.ms/rai-collection.</p>
         <p className="hero__subtitle">Building AI Solutions? Let's Build Responsibly!</p>
         <div className={styles.buttons}>
           <Link
